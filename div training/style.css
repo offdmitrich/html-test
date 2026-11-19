@@ -1,0 +1,114 @@
+#div-1 {
+    background-color: burlywood;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.div {
+    color: brown;
+    text-align: center;
+}
+
+#div-2 {
+    background-color: burlywood;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color: blueviolet;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.parent-1 > p {
+    color: cadetblue;
+}
+
+/* margin - відступ */
+.parent p {
+    width: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+a {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100px; 
+}
+
+.Paragraph p{
+    display: inline-block;
+    height: 100px;
+    width: 100px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.none {
+    display: none;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pixels {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    /* 38 px = 1 cm */
+}
+
+.procent {
+    width: 50%;
+    background-color: bisque;
+}
+
+.vv {
+    width: 50vw;
+    height: 50vh;
+    background-color:brown;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.em-child {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.rem {
+    font-size: 1rem;
+}
+
+.priority {
+    font-size: 10px;
+    color: pink;
+}
+
+div h1 {
+    font-size: 2em;
+    color: aquamarine;
+}
+
+h1 {
+    color: black;
+}

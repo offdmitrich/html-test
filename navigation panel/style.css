@@ -1,0 +1,148 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.header {
+    background-color: antiquewhite;
+    height: 800px;
+    background-image: url("https://www.techandall.com/wp-content/uploads/2013/10/techandall_wallpaper_1.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+
+.header::after {
+    position: relative;
+    display: flex;
+    opacity: .35;
+    background: #0c3632;
+    content: "";
+    height: 100%;
+    width: 100%; 
+    background-size: cover;
+    transition: all 350ms ease;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+/* .logo-container {
+    display: flex;
+    justify-content: left;
+} */
+
+.logo-link {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 20px;
+}
+/* CSS Pseudo-elements 
+We can do some animations with pseudo-elements
+*/
+
+.nav-list-animate {
+    position: relative;
+}
+
+.nav-list-animate::after {
+    content: "";
+    height: 2px;
+    background: white;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);
+    /* transform can make animation */
+    transition: all 350ms ease;
+}
+
+.nav-list-animate:hover::after {
+    transform: scaleX(1);
+    border-radius: 3px;
+}
+/* Pseudo-class */
+/* nth-child() - searches element in father class*/
+/* nth-of-type() -  searches element by TYPE in father class*/
+.nav-list li:last-of-type a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 350ms ease;
+}
+
+.nav-list li:last-of-type a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav-list li:last-of-type a svg {
+    width: 1em;
+    padding-right: 5px;
+}
+
+/* Levels of css box
+1. Content
+2. Padding
+3. Border
+4. Margin */
+/* If you want to contain padding in box size
+you should use block-sizing: border-box */
+
+.logo-img {
+    width: auto;
+    height: 40px;
+    padding: 0 20px;
+}
+
+/* CSS Position
+default - static
+relative - we can move the position
+absolute - element with this position have his own position
+z-index can change order of elements
+if absolute element have property top: 0 - it will be at start of page
+absolute element have property width and height
+fixed - element will have same position as at start of using page
+sticky + top: 0 - it's like fixed (but more usable)
+(not supported in all browsers (how i can use sticky for search))
+*/
+
+/* Semantics tags 
+1. for developers
+2. for SEO
+3.  
+
+*/
